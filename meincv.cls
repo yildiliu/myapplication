@@ -51,19 +51,22 @@
 
 % huge name placed in the center
 \newcommand{\name}[1]{%
-  \centerline{\Huge{#1}}
+  \centerline{\color{moderncvblue}\Huge\textbf{#1} \color{gray}\textbf{| Lebenslauf}}
 }
 
 
-% contact data
-\newcommand{\contact}[5]{%
-    \centerline{%
-        \makebox[0pt][c]{%
-            #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-            \ #4 \ \ #5%
-        }%
-    }%
-}
+% % contact below name for a modern look and also for a consistently design
+% \newcommand{\contact}[4]{%
+%     \centerline{%
+%         \makebox[0pt][c]{%
+%             #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3 {\large\textperiodcentered} #4
+%             
+%         }%
+%     }%
+% }
+
+
+
 
 
 
