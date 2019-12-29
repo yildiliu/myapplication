@@ -16,12 +16,14 @@
 \RequirePackage[left=2.0cm, right=2.0cm, top=1.8cm, bottom=2.0cm]{geometry}  % change margin
 \RequirePackage{fontawesome}  % for beautiful icons
 \RequirePackage{tikz} % mainly used for beautiful bulletpoint symbols
- 
+
+\RequirePackage{nopageno} % no pagen numbers
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	 Commands       	%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \newcommand{\newparagraph}{
 \vskip 0.2cm}
@@ -31,13 +33,20 @@
 
 % Customize \section command
 \titleformat{\section}         
-  {\normalfont\Large\raggedright\color{moderncvblue}} 
+  {\normalfont\Large\raggedright\color{moderncvblue} \vskip 0.05cm} 
   {}{0em}                      
   {}                           
   [\titlerule]  
 
+% Customize \subsection command
+
+\titleformat{\subsection}
+  {\vskip -0.3cm \normalfont\Large\raggedright\color{moderncvblue} \vskip 0.2cm} 
+  {}{0em}                      
+  {}                           
+
 % the following lines should have the same distance too.
-% First it makes a distance. Secondly it produces a parbox so all the words are in the parbox
+% First a distance is produced with tabto. Secondly it produces a parbox, so that the following lines have the same distance too.
 
 \newcommand*{\mytab}[1]{\tabto{4.5cm}\parbox[t]{\dimexpr\textwidth-4.5cm}{#1}} % \dimexpr is used when a quanitity of a type is needed
 
