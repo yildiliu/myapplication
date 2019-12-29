@@ -13,8 +13,9 @@
 \RequirePackage{xcolor} 
 \definecolor{moderncvblue}{rgb}{0.22,0.45,0.70}
 
-\RequirePackage[left=2.0cm, right=2.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
-\RequirePackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
+\RequirePackage[left=2.0cm, right=2.0cm, top=1.8cm, bottom=2.0cm]{geometry}  % change margin
+\RequirePackage{fontawesome}  % for beautiful icons
+\RequirePackage{tikz} % mainly used for beautiful bulletpoint symbols
  
 
 
@@ -60,24 +61,22 @@
 }
 
 
+
+
 % contact below name for a modern look and also for a consistently design
  \newcommand{\contact}[4]{%
      \centerline{%
          \makebox[0pt][c]{%
-             #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3 {\large\textperiodcentered} #4 
+         \color{gray}    #1 \ {\footnotesize\textbullet} \ #2 \ {\footnotesize\textbullet} \ #3 \ {\footnotesize\textbullet} \ #4 
          }%
      }%
  }
 
 
+% new design for bulletpoint symbol 
 
+% Macro for a prettier bulletpoint symbol design
 
-
-
-
-
-
-
-
+\newcommand{\cvbullet}{\tikz\draw[thick,moderncvblue,fill=white] (0,0) circle (0.08);}
 
 
