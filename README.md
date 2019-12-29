@@ -1,20 +1,12 @@
-# Meincv
-Latex class for a curriculum vitae.
+# MyApplication
+Latex class for designing my application.
 
 ## DE:
 
-Diese Klasse wird verwendet, um ein Curriculum Vitae zu gestalten. Die Klasse ist sehr individualisiert. 
+Diese Klasse werden verwendet, um meine Bewerbungsunterlagen zu gestalten. Die Klassen sind sehr individualisiert. 
 
-### Welche Vorteile bietet diese Klasse ? 
-
-Klassen wie moderncv kenne ich bereits. Doch ich möchte eine Klasse haben, die übersichtlich ist und meine Anforderungen erfüllt.
-
-**Meine Hauptanforderungen**:
+**Meine Hauptanforderungen für die Bewerbungsunterlagen und die Klassen**:
 
 - minimalistisch
 - übersichtlich
 - aussagekräftig
-
-(sowohl das cv als auch die Klasse)
-
-

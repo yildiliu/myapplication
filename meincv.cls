@@ -20,6 +20,11 @@
 \RequirePackage{nopageno} % no pagen numbers
 
 
+\RequirePackage[ngerman]{babel} 
+\RequirePackage{datetime}
+
+\RequirePackage{graphicx}  % to insert images
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	 Commands       	%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
