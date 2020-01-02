@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{meincv}[2019/12/25 My custom CV class]
 
-\LoadClass{scrartcl}
+\LoadClass[fontsize=11pt]{scrartcl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	Required Packages       %
@@ -15,7 +15,7 @@
 
 \RequirePackage[left=2.0cm, right=2.0cm, top=1.8cm, bottom=2.0cm]{geometry}  % change margin
 \RequirePackage{fontawesome}  % for beautiful icons
-\RequirePackage{tikz} % mainly used for beautiful bulletpoint symbols
+\RequirePackage{tikz} % tool for producing graphic elements
 
 \RequirePackage{nopageno} % no pagen numbers
 
@@ -93,4 +93,16 @@
 
 \newcommand{\cvbullet}{\tikz\draw[thick,moderncvblue,fill=white] (0,0) circle (0.08);}
 
+% add picture
 
+\newcommand{\photo}[1]{
+
+\setlength{\unitlength}{1pt}
+\begin{picture}(0,0)
+	\color{moderncvblue}\setlength{\fboxsep}{0pt}%
+	\setlength{\fboxrule}{0.4pt}%
+	\put(365,-155){\fbox{\includegraphics[width=4cm]{#1}}}
+\end{picture}
+
+
+}

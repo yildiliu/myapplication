@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{meinanschreiben}[2019/12/29 My custom cover letter class]
-\LoadClass{scrartcl}
+\LoadClass{scrlttr2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	Required Packages       %
@@ -17,13 +17,15 @@
 
 \RequirePackage{nopageno} % no pagen numbers
 \RequirePackage[ngerman]{babel} 
-\RequirePackage{datetime}
+%\RequirePackage{datetime} %ngerman and datetime dont cooperate well. ToDO: research
 \RequirePackage{graphicx}  % to insert images
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	 Commands       	%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% omit identation
+\setlength{\parindent}{0pt}
 
 % update font
 \renewcommand*\familydefault{\sfdefault} 
@@ -33,6 +35,8 @@
   \centerline{\color{moderncvblue}\Huge\textbf{#1} \color{gray}\textbf{| Anschreiben}}
 \vskip 0.1cm
 }
+
+
 
 
 
