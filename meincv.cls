@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{meincv}[2019/12/25 My custom CV class]
-
+\listfiles % show package version in log
 \LoadClass[fontsize=11pt]{scrartcl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11,6 +11,11 @@
 \RequirePackage{tabto}[2019/12/26] % spacing between points
 \RequirePackage[T1]{fontenc} % prettier font
 \RequirePackage{xcolor} 
+\RequirePackage{enumerate}
+\RequirePackage{enumitem}
+
+%\setenumerate{noitemsep,topsep=0pt,align=left,leftmargin=*} must be added in .tex file currently //TODO FIX
+
 \definecolor{moderncvblue}{rgb}{0.22,0.45,0.70}
 
 \RequirePackage[left=2.0cm, right=2.0cm, top=1.8cm, bottom=2.0cm]{geometry}  % change margin
@@ -28,6 +33,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	 Commands       	%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 \newcommand{\newparagraph}{
@@ -91,7 +98,9 @@
 
 % Macro for a prettier bulletpoint symbol design
 
-\newcommand{\cvbullet}{\tikz\draw[thick,moderncvblue,fill=white] (0,0) circle (0.08);}
+\newcommand{\cvbullet}{\tikz\draw[thick,moderncvblue,fill=white] (0,0) circle (0.05);}
+
+\newcommand{\cvbullethyphen}{\color{moderncvblue}-}
 
 % add picture
 
@@ -106,3 +115,5 @@
 
 
 }
+
+
