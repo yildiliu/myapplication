@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{meinanschreiben}[2019/12/29 My custom cover letter class]
 \LoadClass{scrlttr2}
+\KOMAoptions{foldmarks=off}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 	Required Packages       %
